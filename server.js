@@ -44,7 +44,7 @@ const fileName = "register.csv";
 // const csvFile = fs.createWriteStream(fileName);
 // const stream = format({ headers:true });
 
-app.listen("3000",function(){
+app.listen(process.env.PORT || "3000",function(){
     console.log("server started in port 3000");
 });
 
